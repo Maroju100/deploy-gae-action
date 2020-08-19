@@ -27,6 +27,8 @@ To test. Default `false`. PS: If true does not deploy
   with:
     service-account:  ${{ secrets.SERVICE_ACCOUNT }}
     project-id: ${{ secrets.PROJECT_ID }}
+    gae_config_path: './app.yaml'
+
 ```
 
 ## :memo: License

@@ -3,12 +3,13 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say service count
+    name: Example project
     steps:
     - name: Deploy App Engine
       id: deploy
-      uses: claudiuri/deploy-gae-action@master
+      uses: etereo-io/deploy-gae-action
       with:
         service-account:  ${{ secrets.SERVICE_ACCOUNT }}
         project-id: ${{ secrets.PROJECT_ID }}
+        gae_config_path: './app.yaml'
         debug: true
