@@ -9,7 +9,7 @@ inputs:
     required: true
   debug:
     description: 'Debug action'
-    default: false
+    default: ''
   gae_config_path:
     description: 'Path to the yaml file'
     required: true
