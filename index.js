@@ -6,13 +6,13 @@ async function run() {
   try {
     
     const serviceAccountFile = `/tmp/${(new Date()).getTime()}.json`; // Create temp json
-    const projectName = core.getInput('project-id');
+    const projectName = core.getInput('project_id');
     const isDebug = core.getInput('debug');
     const appYamlPath = core.getInput('gae_config_path')
 
     core.startGroup('Processing service account');
     console.log('Copy service account');
-    fs.writeFileSync(serviceAccountFile, core.getInput('service-account'));
+    fs.writeFileSync(serviceAccountFile, core.getInput('service_account'));
 
     console.log('Activate service account');
     execSync(`gcloud auth activate-service-account --key-file ${serviceAccountFile}`, { stdio: 'inherit' });

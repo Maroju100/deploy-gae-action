@@ -25,8 +25,8 @@ To test. Default `false`. PS: If true does not deploy
 - name: Deploy to Google App Engine
   uses: etereo-io/deploy-gae-action
   with:
-    service-account:  ${{ secrets.SERVICE_ACCOUNT }}
-    project-id: ${{ secrets.PROJECT_ID }}
+    service_account:  ${{ secrets.SERVICE_ACCOUNT }}
+    project_id: ${{ secrets.PROJECT_ID }}
     gae_config_path: './app.yaml'
 
 ```
