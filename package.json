@@ -1,22 +1,22 @@
 {
   "name": "deploy-gae-action",
   "version": "2.0.1",
-  "description": "",
+  "description": "Github actions to deploy to Google App Engine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claudiuri/deploy-gae-action.git"
+    "url": "git+https://github.com/etereo-io/deploy-gae-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/claudiuri/deploy-gae-action/issues"
+    "url": "https://github.com/etereo-io/deploy-gae-action/issues"
   },
-  "homepage": "https://github.com/claudiuri/deploy-gae-action#readme",
+  "homepage": "https://github.com/etereo-io/deploy-gae-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^3.0.0"
