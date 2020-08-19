@@ -1,10 +1,10 @@
 name: 'Deploy App Engine'
-description: 'This action allowed you publish an application to Google App Engine'
+description: 'This action allows you publish an application to Google App Engine'
 inputs:
-  service-account:
+  service_account:
     description: 'Service account file'
     required: true
-  project-id:
+  project_id:
     description: 'Project id'
     required: true
   debug:

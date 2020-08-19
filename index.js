@@ -20,7 +20,7 @@ async function run() {
     execSync(`gcloud auth activate-service-account --key-file ${serviceAccountFile}`, { stdio: 'inherit' });
     core.endGroup();
 
-    core.startGroup('Set Google Clound project');
+    core.startGroup('Set Google Cloud project');
     execSync(`gcloud config set project ${projectName}`, {stdio: 'inherit'});
     core.endGroup();
 
@@ -31,7 +31,7 @@ async function run() {
       core.endGroup();
     } else {
 
-      core.startGroup('Depoy project');
+      core.startGroup('Deploy project');
       execSync(`gcloud app deploy --appyaml=${appYamlPath}`, {stdio: 'inherit'});
       core.endGroup();
     }
