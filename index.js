@@ -32,7 +32,7 @@ async function run() {
     } else {
 
       core.startGroup('Deploy project');
-      execSync(`gcloud app deploy --appyaml=${appYamlPath}`, {stdio: 'inherit'});
+      execSync(`gcloud app deploy --appyaml=${appYamlPath} -q --promote --stop-previous-version`, {stdio: 'inherit'});
       core.endGroup();
     }
 
