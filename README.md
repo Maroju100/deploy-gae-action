@@ -10,6 +10,9 @@
 
 **Required** The service account private key (JSON) encoded as a base64, you can know how to create one [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
+The service account needs to have the following permissions:
+- App Engine Admin
+- Cloud Build service agent 
 
 ### `project_id`
 
