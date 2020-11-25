@@ -13,3 +13,4 @@ jobs:
         project_id: ${{ secrets.PROJECT_ID }}
         gae_config_path: './app.yaml'
         debug: true
+        no_cache: false

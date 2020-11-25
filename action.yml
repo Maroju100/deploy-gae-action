@@ -14,6 +14,10 @@ inputs:
     description: 'Path to the yaml file'
     required: true
     default: './app.yaml'
+  no_cache:
+    description: 'Disable cache'
+    required: false
+    default: false
 runs:
   using: 'node12'
   main: 'index.js'

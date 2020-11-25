@@ -9,6 +9,7 @@ async function run() {
     const projectName = core.getInput('project_id');
     const isDebug = core.getInput('debug');
     const appYamlPath = core.getInput('gae_config_path')
+    const noCache = core.getInput('no_cache')
 
     core.startGroup('Processing service account');
     console.log('Copy service account');
@@ -32,7 +33,7 @@ async function run() {
     } else {
 
       core.startGroup('Deploy project');
-      execSync(`gcloud app deploy --appyaml=${appYamlPath} -q --promote --stop-previous-version`, {stdio: 'inherit'});
+      execSync(`gcloud app deploy --appyaml=${appYamlPath} -q --promote --stop-previous-version ${noCache ? ' --no-cache': ''}`, {stdio: 'inherit'});
       core.endGroup();
     }
 
