@@ -18,6 +18,10 @@ inputs:
     description: 'Disable cache'
     required: false
     default: false
+  dispatch_yaml:
+    description: 'dispatch.yaml path (optional)'
+    required: false
+    default: ''
 runs:
   using: 'node12'
   main: 'index.js'

@@ -14,3 +14,4 @@ jobs:
         gae_config_path: './app.yaml'
         debug: true
         no_cache: false
+        dispatch_yaml: ''

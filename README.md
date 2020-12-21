@@ -36,6 +36,7 @@ To test. Default `''`. PS: If is a truthy value it will debug instead of deployi
     project_id: ${{ secrets.PROJECT_ID }}
     gae_config_path: './app.yaml'
     no_cache: false
+    dispatch_yaml: './dispatch.yaml'
 
 ```
 
