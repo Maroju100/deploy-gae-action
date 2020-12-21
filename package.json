@@ -1,6 +1,6 @@
 {
   "name": "deploy-gae-action",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Github actions to deploy to Google App Engine",
   "main": "index.js",
   "scripts": {
