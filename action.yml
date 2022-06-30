@@ -13,7 +13,7 @@ inputs:
   gae_config_path:
     description: 'Path to the yaml file'
     required: true
-    default: './app.yaml'
+    default: './server/app.yaml'
   no_cache:
     description: 'Disable cache'
     required: false
